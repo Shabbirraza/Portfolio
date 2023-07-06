@@ -1,0 +1,158 @@
+:root {
+    --black: rgba(33, 33, 33, 255);
+    --green: rgba(0, 255, 182, 255);
+    --darkgreen: rgba(17, 57, 49, 255);
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgba(33, 33, 33, 255);
+}
+
+@media screen and (min-width: 700px) {
+    .main {
+        height: auto;
+        
+    }
+    .secoundSection{
+        align-items: center;
+    }
+    .leftS{
+        align-items: center;
+    }
+}
+
+.navbar {
+    display: flex;
+    /* background-color: blue; */
+    background-color: transparent;
+
+}
+
+.navbar .left {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.navbar .box {
+    width: 40px;
+    height: 40px;
+    background-color: var(--darkgreen);
+    margin: 0px 25px 0px 30px;
+    border-radius: 5px;
+
+}
+
+h1 {
+    font-family: Pacifico;
+    color: white;
+
+}
+
+.right {
+    flex-grow: 3;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.right ul {
+    list-style-type: none;
+    /* background-color: tomato */
+    /* height: 100%; */
+    display: flex;
+    ;
+
+}
+
+.right li {
+    display: inline-block;
+
+    width: 100px;
+    /* background-color: azure; */
+    text-align: center;
+    vertical-align: middle;
+    margin: 3px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.right li:hover {
+    cursor: pointer;
+}
+
+.right button {
+    padding: 15px 40px;
+    font-size: 16px;
+    cursor: pointer;
+
+    border-radius: 40px;
+    background-color: var(--green);
+}
+
+.secoundSection {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.secoundSection .leftS{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+
+
+}
+
+.secoundSection .leftS h1,
+p {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+}
+
+.secoundSection .leftS h1 {
+    font-size: 50px;
+}
+
+.greenColor {
+    color: var(--green);
+}
+
+.secoundSection .image {
+    flex-grow: 1.1;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    border-radius: 10px;
+}
+
+.leftS button {
+    margin: 10px;
+    padding: 15px 40px;
+    font-size: 20px;
+    width: 250px;
+
+    border-radius: 40px;
+    background-color: var(--green);
+    cursor: pointer;
+}
